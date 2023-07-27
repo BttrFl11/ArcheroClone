@@ -46,7 +46,7 @@ namespace Core
             _enemyCounter.OnAllEnemiesDied -= CompleteLevel;
         }
 
-        public void CompleteLevel()
+        private void CompleteLevel()
         {
             _levelId++;
 
