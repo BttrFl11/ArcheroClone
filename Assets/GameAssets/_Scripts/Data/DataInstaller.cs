@@ -15,8 +15,6 @@ namespace Data
             Container.Bind<PlayerConfig>().FromInstance(_playerConfig).AsSingle().NonLazy();
             Container.Bind<PlayerRuntimeData>().FromInstance(_playerRuntimeData).AsSingle().NonLazy();
             Container.Bind<GameConfig>().FromInstance(_gameConfig).AsSingle().NonLazy();
-
-            Container.Bind<PlayerDataManager>().AsSingle().NonLazy();
         }
     }
 }

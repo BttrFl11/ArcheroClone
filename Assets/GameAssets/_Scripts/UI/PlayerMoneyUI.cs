@@ -14,14 +14,14 @@ namespace UI
 
         private void OnEnable()
         {
-            _playerData.OnMoneyChanged += UpdateUI;
+            _playerData.Wallet.OnMoneyChanged += UpdateUI;
 
-            UpdateUI(_playerData.Money);
+            UpdateUI(_playerData.Wallet.Money);
         }
 
         private void OnDisable()
         {
-            _playerData.OnMoneyChanged -= UpdateUI;
+            _playerData.Wallet.OnMoneyChanged -= UpdateUI;
         }
 
         private void UpdateUI(int money)
